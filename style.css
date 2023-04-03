@@ -195,44 +195,14 @@ body {
     background-color: #ffffff;
 }
 
-#login .btn {                         
-    display: flex;
-    background-color: #838383;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 75px;
-    font-size: 18px
-}
-
 #checkout .btn {                         
     display: flex;
     background-color: #838383;
     justify-content: center;
-    align-items: center;
     margin-top: 50px;
     margin-bottom: 75px;
     font-size: 18px
 }
-
-.shipping {
-    width: 7%;
-    margin-left: 5%;
-    margin-top: 2%;
-    alignment: left;
-    position: absolute;
-}
-
-#login .container {
-    position: static;
-    padding-bottom: 20%;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 800px;
-    max-width: 100%;
-    padding-left: 10%;
-}
-
 
 input[type="password"],
 [type="month"],
@@ -257,26 +227,7 @@ h2 {
     padding-left: 20%;
 }
 
-.form-login {
-    margin-block-start: 3em;
-    position: absolute;
-    width: 30%;
-    border: 1px solid #b8b8b8;
-    background-color: #ffffff;
-    border-radius: 5%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-#login-pic {
-    width: 80px;
-}
-
-.form-control,
-::after,
-::before {
+.form-control {
     box-sizing: border-box;
     display: inline-block;
     margin-bottom: 10px;
@@ -285,7 +236,6 @@ h2 {
     position: static;
     overflow: hidden;
     alignment: center;
-
 }
 
 #checkout .container {
