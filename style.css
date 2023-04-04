@@ -245,3 +245,50 @@ h2 {
     width: 50rem;
     color: #000000;
 }
+
+.navigation {
+    list-style-type: none;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    gap: 5px;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+btn-qnt{
+    width: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dadada;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: auto;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #959595;
+    border-radius: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

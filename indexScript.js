@@ -25,11 +25,36 @@ function addActionListener() {
     const items = document.querySelectorAll(".box");
     //    items.forEach((item) => console.log(item)); // kontroll
     items.forEach((item) => item.addEventListener('click', () => {
+        addToCart()
         saveProductIdToLocalStorage(item);
         window.open('order.html', '_self');
     })
     );
 }
+
+
+let varukorg = []
+let item;
+let newProduct;
+function addToCart(){
+    varukorg = document.querySelector('.product')
+    varukorg.innerHTML = ''
+
+    if (addActionListener()){
+        if (document.getElementById("product").item().value == document.querySelectorAll('.box').item(productId).value) {
+
+            varukorg.innerHTML = item++
+            varukorg.push().toLocaleString()
+
+        } else {
+            newProduct = document.querySelectorAll('.box').item(productId).value
+            varukorg.push(item[newProduct]+1)
+        }
+    }
+}
+
+
+
 
 loadAPI();
 
@@ -38,3 +63,5 @@ function saveProductIdToLocalStorage(item) {
     console.log(productId); // kontroll
     localStorage.setItem("productId", JSON.stringify(productId));
 }
+
+
